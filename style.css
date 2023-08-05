@@ -1,0 +1,113 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background: linear-gradient(135deg ,white , purple ,blue);
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .img-box{
+
+    margin: 5px;
+    height: 600px;
+    border-radius: 50px;
+    background-size: auto 100%;
+    background-position: center;
+    transition: 0.5s ;
+    position: relative;
+}
+
+.img-box:first-child{
+
+    background-image: url(./Images/img-1.jpg);
+}
+.img-box:nth-child(2){
+
+    background-image: url(./Images/img-2.jpg);
+}
+.img-box:nth-child(3){
+
+    background-image: url(./Images/img-3.jpg);
+}
+.img-box:nth-child(4){
+
+    background-image: url(./Images/img-4.jpg);
+}
+.img-box:nth-child(5){
+
+    background-image: url(./Images/img-5.jpg);
+}
+.img-box:nth-child(6){
+
+    background-image: url(./Images/img-6.jpg);
+}
+
+
+.container .img-box:not(:active){
+
+
+    width: 80px;
+    
+   
+
+}
+.container .img-box:active , .container .img-box:hover{
+
+    width: 700px;
+    background-size: auto 100%;
+
+
+}
+
+.icon{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    font-size: 1.25rem;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.info {
+
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.container .img-box:not(:active) .info{
+
+    display: none;
+}
+
+.container .img-box:active .info , .container .img-box:hover .info{
+
+    display: block;
+}
+    
