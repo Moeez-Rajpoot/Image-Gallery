@@ -29,7 +29,7 @@ body{
     border-radius: 50px;
     background-size: auto 100%;
     background-position: center;
-    transition: 0.5s ;
+    transition: 0.5s linear;
     position: relative;
 }
 
@@ -63,6 +63,7 @@ body{
 
 
     width: 80px;
+
     
    
 
